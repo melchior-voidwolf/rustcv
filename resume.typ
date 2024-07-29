@@ -2,101 +2,143 @@
 
 #show: chicv
 
-= Chi Zhang
+= 王子阳
 
-#fa[#envelope] skyzh\@cmu.edu |
-#fa[#github] #link("https://github.com/skyzh")[github.com/skyzh] |
-#fa[#globe] #link("https://skyzh.dev")[skyzh.dev] |
-#fa[#linkedin] #link("https://www.linkedin.com/in/alex-chi-skyzh/")[alex-chi-skyzh]
+#fa[#envelope] kmno4k2mno4\@gmail.com |
+#fa[#phone] +86 15311428085 |
+#fa[#birthday-cake] 1994.09.07 |
+#fa[#github] #link("https://github.com/melchior-voidwolf")[https://github.com/melchior-voidwolf]
+
 
 == Education
 #cventry(
-  tl: "Carnegie Mellon University",
-  tr:  "2022/08 - 2023/12 (Expected)",
-  bl: "Master of Science in Computer Science, GPA 4.09/4.33",
-  br: "Pittsburgh, PA, USA"
-)[
-  - Teaching Assistant for 15-445/645 Database Systems (Fall 2022, Spring 2023)
-]
-#cventry(
-  tl: "Shangehai Jiao Tong University",
-  tr: "2018/09 - 2022/06",
-  bl: "B. Eng in Computer Science and Technology",
-  br: "Shangehai, China"
-)[
-  - GPA 93.80/100, Rank 1/149, National Scholarship 2019 (Top 0.2% national-wide)
-  - A+ Courses: Operating Systems, Computer Architecture, Computer Networks, and 28 others
-]
+  tl: "南京邮电大学",
+  tr:  "2012.09 - 2017.02 (肄业)",
+  bl: "光信息科学与技术专业",
+  br: "光电工程学院"
+)[]
+
+
 == Work Experience
 #cventry(
-  tl: "RisingWave Labs",
-  tr: "2021/08 - 2022/07",
-  bl: "Database System R&D Intern",
-  br: "Shanghai, China"
+  tl: "InnoVision",
+  tr: "2022/11 - 至今",
+  bl: "全栈开发（偏向前端）",
+  br: "北京, 中国"
 )[
-  - *Top contributor of #iconlink(
-    "https://github.com/risingwavelabs/risingwave",
-    text: "RisingWave",
-    icon: github)* _as of 2023/03_. RisingWave is a database system with PostgreSQL-compatible interface that incrementally maintains materialized views. Worked on the development of almost all components related to stream computing and state store.
-  - *Streaming Index Joins*: Designed shared state and streaming index in RisingWave; implemented index lookup join executor; implemented delta join DAG optimizer transformations; implemented distributed delta join scheduler
-  - *Performance Improvement*: Conducted intensive benchmarks and analyzed performance issues. Fixed bugs, proposed strategies, and led cross-team collaboration which improved the system throughput by 10x in a 3-month period
-  - *Developer Experience*. Initiated the RiseDev development tool to start a RisingWave cluster with one command, which is deeply integrated into the development workflow across unit testing, integration testing, and benchmarking. Built RisingWave Streaming Dashboard that shows cluster metrics and visualizes streaming query plans in one place
-  - *Mentoring*. Mentored database kernel interns and helped their integration into the team. Maintained overview documents of the database kernel to facilitate knowledge transfer and help new hires learn about the system.
+  - 负责 Home 和 Player 两个项目的网站及 API 开发
+    - 基于 Next.js 搭建网站, 使用 MongoDB + Express 开发 API
+    - 集成第三方文生图模型和 ChatGPT 进行提示词增强和场景描述
+    - 基于 Strapi 作为无头 CMS 提供 API 集成 Blog
+    - 日均流量约 1000 人, 转换率约 10%
+  - 使用 Antd 搭建了灵活的后台管理系统
+  - Player 项目后端重构, 采用 LRU 缓存, 每日访问量约 5000 次
+  - 重构并维护 Moonlink (一个类似于 AirPlay 应用), 加入 DLNA 协议支持
+  - 开发 VisionOS APP《 Moon Portal: 3D 360 Frame AI 》和《 Moon Player: Play Everything 17+ 》
+    - 使用 SwiftUI
+    - 两个应用均获苹果编辑推荐
+    - 在两者中工作量超过 50%
+    - 总计销量超过 30000
 ]
 
 #cventry(
-  tl: "ByteDance, Ltd.",
-  tr: "2021/06 - 2021/08",
-  bl: "Storage System R&D Intern, TerarkDB Team",
-  br: "Beijing, China"
+  tl: "Pleisto",
+  tr: "2022/03 - 2022/09",
+  bl: "前端开发",
+  br: "北京, 中国"
 )[
-  - *Co-Optimized #iconlink(text: "TerarkDB", icon: github, "https://github.com/bytedance/terarkdb")* and *#iconlink(text: "ZenFS", icon: github, "https://github.com/westerndigitalcorporation/zenfs")*. Implemented Zone-aware Garbage Collection in TerarkDB and WAL-Aware Zone Allocator in ZenFS, which reduced 3-4x of space amplification and improved the p999 tail latency by 100x
-  /*
-  - Implemented *Zone-Aware Garbage Collection* in *TerrakDB* for Zoned Namespace SSDs, which reduced 3-4x of space amplification caused by interleaving write lifetime in a single ZNS zone. #iconlink("https://github.com/bytedance/terarkdb", icon: github)
-  - Added observability facilities to *ZenFS* (by Western Digital) to analyze bottlenecks and implemented a *WAL-Aware Zone Allocator*, which reduced the p999 tail latency by 100x. #iconlink("https://github.com/bzbd/zenfs", icon: github)
-  */
+  - 开发 MashCard 项目, 负责前端组件库开发, 项目采用 monorepo 管理
+  - 后端从 RoR 迁移至 Node.js, 前端使用 React 和自封装的 tiptap
 ]
 
 #cventry(
-  tl: "PingCAP, Inc.",
-  tr: "2020/08 - 2021/01",
-  bl: "Storage System R&D Intern",
-  br: "Shanghai, China"
+  tl: "滴滴出行",
+  tr: "2020/06 - 2022/02",
+  bl: "内部工具开发",
+  br: "北京, 中国"
 )[
-  - Built LSM-based storage engine *#iconlink("https://github.com/tikv/agatedb", icon: github, text: "AgateDB")* from ground-up. Inspired by WiscKey and BadgerDB, AgateDB separates large vallues from LSM tree into value log, so as to reduce write amplification.
+  - 负责 Duse 工具开发, 包括围栏管理和可视化热力图, 服务数百万司机和运营人员
+  - 建设 EVE 中台, 统一管理特征、数据生产、模型训练和上线分流
+  - 使用 dva 开发框架, 自定义组件发布到内部 npm
+  - 设计并落地基于 Node.js 的 BFF 系统, 提升开发效率
+]
+
+#cventry(
+  tl: "豆瓣",
+  tr: "2019/04 - 2020/05",
+  bl: "移动端和 PC 端维护",
+  br: "北京, 中国"
+)[
+  - 负责日常迭代开发, 重大项目是负责了黑夜模式和会员项目, 服务大批豆瓣用户
+  - 后端使用 Quixote, 前端使用 Backbone 和 React
+  - 项目中使用 GraphQL 和 TypeScript
+]
+
+#cventry(
+  tl: "知乎",
+  tr: "2018/01 - 2018/12",
+  bl: "多端开发",
+  br: "北京, 中国"
+)[
+  - 负责移动端、PC 端及后台管理系统开发
+  - 开发离线包功能, 采用自定义 scheme 绕过 iOS WebKit hook 限制, 几乎影响了所有知乎手机用户
+  - 开发 Node.js 工具进行自动化发布
+]
+
+#cventry(
+  tl: "华兴集团",
+  tr: "2017/09 - 2017/12",
+  bl: "iOS 端 App 开发",
+  br: "北京, 中国"
+)[
+  - 负责 iOS 端 App 和后台业务系统开发, 主要服务了数万 VC
+  - 使用 RN 技术栈, 引入 immutableJS 和 GraphQL 解决数据存取以及开发效率问题
+]
+
+#cventry(
+  tl: "网信集团",
+  tr: "2017/02 - 2017/08",
+  bl: "金融业务系统开发",
+  br: "北京, 中国"
+)[
+  - 负责前端开发, 服务了大量内部金融用户
+  - 使用 React, ES6, gulp, antd, webpack作为主要主要技术栈组成
 ]
 
 == Open-Source Contributions
 
 #cventry(
-  tl: [*cmu-db/busttub* #iconlink("https://github.com/cmu-db/bustub", icon: github)],
-  tr: "2022/08 - Now"
+  tl: [*Antd, Antd Mobile, Taro-ui, DefinitelyTyped*],
+  tr: "",
 )[
-  - Lead the development of the BusTub database system. Added SQL support/query processing layer to the system.
-  - Redesigned course projects to help students better understand the concepts and apply them to real-world scenarios. Developed leaderboard tests to challenge advanced students and enable further study.
-
+  - 为这些知名项目贡献了数十个 PR, 有效解决了移动端上传照片缓慢的问题, 具体可以参考我的 #link("https://github.com/melchior-voidwolf")[Github]
 ]
 
+== Technical Skills
 #cventry(
-  tl: [*RisingLight Community* #iconlink("https://github.com/risinglightdb", icon: github)],
-  tr: "2022/01 - Now",
-)[
-  - Lead the development of *RisingLight*, an OLAP database system for educational purpose.
-]
-
+  tl: "前端",
+  tr: "React, Vue, Redux",
+  bl: "框架语言中, 主要擅长React, 从最初的到 createClass 到后续的 Hooks 模式均有深入使用经验"
+)[]
 #cventry(
-  tl: [*TiKV Community* #iconlink("https://github.com/tikv", icon: github)],
-  tr: "2020/05 - Now"
-)[
-  - Maintains *TiKV Coprocessor*, the push-down execution framework of TiDB. Mentored community members to contribute features (e.g. new data types, plugin system) in the *LFX Mentorship*. #iconlink("https://github.com/tikv/tikv/issues/9066")  #iconlink("https://github.com/tikv/tikv/issues/9747")
-]
-
+  tl: "后端",
+  tr: "Node.js, GraphQL"
+)[]
 #cventry(
-  tl: "Personal Projects",
-  tr: "5.3k followers " + iconlink(text: "skyzh", icon: github, "https://github.com/skyzh")
-)[
-  - *#iconlink(icon: github, text: "mini-lsm", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Build a simple LSM-Tree storage system in Rust in a week
-  - *#iconlink(icon: github, text: "type-exercise-in-rust", "https://github.com/skyzh/mini-lsm")* (#fa[#star]1k) Learn Rust generics by implementing a vectorized expression evaluation framework
-]
+  tl: "语言",
+  tr: "JavaScript, TypeScript, Python"
+)[]
+#cventry(
+  tl: "开发工具",
+  tr: "VScode, iterm2"
+)[]
+#cventry(
+  tl: "其他",
+  tr: "混合开发, 持续集成, 自动化打包测试"
+)[]
+#cventry(
+  tl: "个人兴趣",
+  tr: "DIY爱好者, 3D打印机用户, 狂热的咖啡爱好者, 精通从烘焙到萃取的各种技术"
+)[]
 
 #align(right, text(fill: gray)[Last Updated on #today()])
